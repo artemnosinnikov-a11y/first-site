@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayro - Дела</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top">
+        <h1>Ayro</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">Обо мне</a>
+            <a href="projects.html">Проекты</a>
+            <a href="todo.html" class="active">Дела</a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="form" id="todo-form">
+            <input type="text" id="todo-input" placeholder="Название дела">
+            <button type="submit">Добавить</button>
+        </form>
+        <ul id="todo-list" class="todo-list"></ul>
+    </main>
+    <script src="todo.js"></script>  
+</body>
+</html>
