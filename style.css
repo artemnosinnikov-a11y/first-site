@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #111318;
+    color: #e9edf5;
+    font-family: "Segoe UI", sans-serif;
+    max-width: 780px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #6ea8ff;
+    font-size: 26px;
+    margin: 0;
+}
+
+h2 {
+    color: #a9b4c9;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #2a3140;
+    margin-bottom: 28px;
+}
+
+.top nav {
+    display: flex;
+    gap: 18px;
+}
+
+.top a {
+    color: #8ab4ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.top a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+}
+
+.text {
+    flex: 1;
+}
+
+img {
+    width: 260px;
+    flex: none;
+    border-radius: 14px;
+    display: block;
+    transition: transform 0.25s ease, border-radius 0.25s ease;
+}
+
+img:hover {
+    transform: scale(1.04);
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+.top a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #6ea8ff;
+    padding-bottom: 4px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 320px;
+    margin-top: 14px;
+}
+
+.form input {
+    font: inherit;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #2a3140;
+    background: #0e1219;
+    color: #e9edf5;
+}
+
+.form button {
+    font: inherit;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    background: #6ea8ff;
+    color: #0b0d12;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #8ab4ff;
+}
+
+.btn {
+    font: inherit;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #6ea8ff;
+    color: #0b0d12;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #8ab4ff;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 18px;
+    max-width: 420px;
+}
+
+.todo-list li {
+    background: #141821;
+    border: 1px solid #2a3140;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.todo-list li.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.dog {
+    display: none;
+    margin-top: 14px;
+    max-width: 320px;
+    border-radius: 14px;
+    border: 1px solid #2a3140;
+}
+
+.dog.visible {
+    display: block;
+}
